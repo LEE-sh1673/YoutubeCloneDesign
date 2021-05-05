@@ -1,0 +1,12 @@
+:root {
+    --main-border: rgb(204, 204, 204);
+    --ytd-grid-item-min-width: 320px;
+    --ytd-grid-item-min-height: 200px;
+    --ytd-grid-item-max-width: 280px;
+    --ytd-grid-item-max-height: 160px;
+    --ytd-grid-thumbnail-min-width: var(--ytd-grid-item-min-width);
+    --ytd-grid-thumbnail-min-height: var(--ytd-grid-item-min-height);
+    --ytd-grid-thumbnail-max-width: var(--ytd-grid-item-max-width);
+    --ytd-grid-thumbnail-max-height: var(--ytd-grid-item-max-height);
+    --yt-video-title-text-color: rgb(3, 3, 3);
+}
