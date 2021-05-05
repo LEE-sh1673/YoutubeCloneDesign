@@ -4,7 +4,11 @@
 /* import local css files. */
 @import "./reset.css";
 @import "./variables.css";
+
+/* Components */
 @import "./video.css";
+@import "./categories.css";
+@import "./header.css";
 
 *, *::before, *::after {
     box-sizing: border-box;

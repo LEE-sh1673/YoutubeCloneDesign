@@ -119,8 +119,9 @@
     color: #555;
 }
 
-@media screen and (min-width: 700px) {
-    .thumbnail-image {
-        max-height: var(--ytd-grid-thumbnail-max-height);
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .video-section {
+        grid-template-columns: repeat(1, minmax(var(--ytd-grid-item-min-width), 1fr));
     }
 }
