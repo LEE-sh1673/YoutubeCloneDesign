@@ -1,5 +1,5 @@
 :root {
-    --main-border: rgb(204, 204, 204);
+    --main-border: rgba(0, 0, 0, 0.1);
     --ytd-grid-item-min-width: 320px;
     --ytd-grid-item-min-height: 200px;
     --ytd-grid-item-max-width: 280px;

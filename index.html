@@ -9,642 +9,466 @@
   </head>
   <body>
     <header class="header">
-        <a href="#">
-            <img src="./img/logo.png" alt="YouTube Logo" class = "youtube-logo">
+      <div class="title-icons">
+        <a href="#" class = "desktop-menu">
+          <img src="./img/menu.svg" alt="Apps">
         </a>
-        <form action="" class="search-bar">
-            <input type="search" class="search-input" placeholder="Search" aria-label="Search">
-            <button type="submit" class = "search-btn">
-                <img src="./img/search.svg" alt="">
-            </button>
-        </form>
-        <div class="menu-icons">
-            <a href="#" class = "search-mobile">
-                <img src="./img/search.svg" alt="Search Video">
-            </a>
-            <a href="#">
-                <img src="./img/video-plus.svg" alt="Upload Video">
-            </a>
-            <a href="#">
-                <img src="./img/apps.svg" alt="Apps">
-            </a>
-            <a href="#">
-                <img src="./img/bell.svg" alt="Notifications">
-            </a>
-            <a href="#">
-                <img class = "menu-channel-icon" src="http://unsplash.it/36/36?gravity=center">
-            </a>
-        </div>
+        <a href="#">
+            <img src="./img/test.svg" alt="YouTube Logo" class = "youtube-logo">
+        </a>
+      </div>
+      <form action="" class="search-bar">
+          <input type="search" class="search-input" placeholder="Search" aria-label="Search">
+          <button type="submit" class = "search-btn">
+              <img src="./img/search.svg" alt="">
+          </button>
+      </form>
+      <div class="menu-icons">
+          <a href="#"  class = "menu-icons__Search">
+              <img src="./img/search.svg" alt="Search Video">
+          </a>
+          <a href="#" class = "menu-icons__Upload">
+              <img src="./img/video-plus.svg" alt="Upload Video">
+          </a>
+          <a href="#">
+            <img src="./img/apps.svg" alt="Apps">
+          </a>
+          <a href="#" class = "menu-icons__Notifications">
+            <img src="./img/bell.svg" alt="Notifications">
+          </a>
+          <a href="#" class = "menu-icons__More">
+              <img src="./img/more.svg" alt="More">
+          </a>
+          <a href="#">
+              <img class = "menu-channel-icon" src="http://unsplash.it/36/36?gravity=center">
+          </a>
+      </div>
     </header>
-
+<!-- 
     <div class="categories">
       <section class="category-section">
-          <button class="category active">All</button>
+        <button class="category active">All</button>
         <button class="category">Category 1</button>
         <button class="category">Category 2</button>
         <button class="category">Category 3</button>
         <button class="category">Category 4</button>
         <button class="category">Category 5</button>
         <button class="category">Category 6</button>
-        <button class="category">Category 7</button>
-        <button class="category">Category 8</button>
-        <button class="category">Category 9</button>
       </section>
+    </div> -->
+
+    <div class="content-container">
+      <div class="guide">
+        <div class = "guide-section">
+          <div class="guide-menu">
+            <div class="guide-menu-item active">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/home.svg" alt="">
+                <span class="guide-menu-item__text">Home</span>
+              </a>
+            </div>
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/fire.svg" alt="">
+                <span class="guide-menu-item__text">Trending</span>
+              </a>
+            </div>
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/subscriptions.svg" alt="">
+                <span class="guide-menu-item__text">Subscriptions</span>
+              </a>
+            </div>
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/youtube.svg" alt="">
+                <span class="guide-menu-item__text">Originals</span>
+              </a>
+            </div>
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/youtube_music.svg" alt="">
+                <span class="guide-menu-item__text">Youtube Music</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class = "guide-section">
+          <div class="guide-menu">
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/video_library.svg" alt="">
+                <span class="guide-menu-item__text">Library</span>
+              </a>
+            </div>
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/history.svg" alt="">
+                <span class="guide-menu-item__text">History</span>
+              </a>
+            </div>
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/slideshow.svg" alt="">
+                <span class="guide-menu-item__text">My Video</span>
+              </a>
+            </div>
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/theaters.svg" alt="">
+                <span class="guide-menu-item__text">My Movie</span>
+              </a>
+            </div>
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/watch_later.svg" alt="">
+                <span class="guide-menu-item__text">Watch later</span>
+              </a>
+            </div>
+            <div class="guide-menu-item">
+              <a href="#" class="guide-menu-item__home">
+                <img src="./img/expand_more.svg" alt="">
+                <span class="guide-menu-item__text">Show more</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="videos">
+        <section class="video-section">
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="3:18"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title"
+                  >Justin Bieber - Peaches ft. Daniel Caesar, Giveon</a
+                >
+                <a href="#" class="video-channel-name">Justin Bieber</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="12:07"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Video Title</a>
+                <a href="#" class="video-channel-name">Channel Name</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="12:07"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Video Title</a>
+                <a href="#" class="video-channel-name">Channel Name</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="12:07"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Video Title</a>
+                <a href="#" class="video-channel-name">Channel Name</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="12:07"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Video Title</a>
+                <a href="#" class="video-channel-name">Channel Name</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="12:07"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Video Title</a>
+                <a href="#" class="video-channel-name">Channel Name</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="12:07"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Video Title</a>
+                <a href="#" class="video-channel-name">Channel Name</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="12:07"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Video Title</a>
+                <a href="#" class="video-channel-name">Channel Name</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="video-section">
+          <h2 class="video-section-title">
+            Special Section
+            <button class="video-section-title-close">&times;</button>
+          </h2>
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="3:18"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title"
+                  >Justin Bieber - Peaches ft. Daniel Caesar, Giveon</a
+                >
+                <a href="#" class="video-channel-name">Justin Bieber</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="video-container">
+            <a
+              href="#"
+              class="thumbnail"
+              data-duration="12:07"
+              data-info="Web dev simplified"
+            >
+              <img
+                src="http://unsplash.it/320/200?music=center"
+                alt=""
+                class="thumbnail-image"
+              />
+            </a>
+            <div class="video-botton-section">
+              <a href="#">
+                <img
+                  src="http://unsplash.it/36/36?music=center"
+                  alt=""
+                  class="channel-icon"
+                />
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Video Title</a>
+                <a href="#" class="video-channel-name">Channel Name</a>
+                <div class="video-metadata">
+                  <span>12K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
     </div>
 
-    <div class="videos">
-      <section class="video-section">
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="3:18"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title"
-                >Justin Bieber - Peaches ft. Daniel Caesar, Giveon</a
-              >
-              <a href="#" class="video-channel-name">Justin Bieber</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="video-section">
-        <h2 class="video-section-title">
-          Special Section
-          <button class="video-section-title-close">&times;</button>
-        </h2>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="3:18"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title"
-                >Justin Bieber - Peaches ft. Daniel Caesar, Giveon</a
-              >
-              <a href="#" class="video-channel-name">Justin Bieber</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="video-section">
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="3:18"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title"
-                >Justin Bieber - Peaches ft. Daniel Caesar, Giveon</a
-              >
-              <a href="#" class="video-channel-name">Justin Bieber</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="video-container">
-          <a
-            href="#"
-            class="thumbnail"
-            data-duration="12:07"
-            data-info="Web dev simplified"
-          >
-            <img
-              src="http://unsplash.it/320/200?music=center"
-              alt=""
-              class="thumbnail-image"
-            />
-          </a>
-          <div class="video-botton-section">
-            <a href="#">
-              <img
-                src="http://unsplash.it/36/36?music=center"
-                alt=""
-                class="channel-icon"
-              />
-            </a>
-            <div class="video-details">
-              <a href="#" class="video-title">Video Title</a>
-              <a href="#" class="video-channel-name">Channel Name</a>
-              <div class="video-metadata">
-                <span>12K views</span>
-                •
-                <span>1 week ago</span>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-    </div>
   </body>
 </html>

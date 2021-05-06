@@ -1,0 +1,48 @@
+.guide {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.guide-menu-item {
+    padding: 0.85rem 24px;
+}
+
+.guide-menu-item > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.guide-menu-item > a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+.guide-menu-item > a .guide-menu-item__text {
+    font-size: 1.4rem;
+    color: #030303;
+}
+
+
+.guide-menu-item.active {
+    background-color: #e7e7e7;
+}
+
+
+.guide-menu-item:hover {
+    background-color: #efefef;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .guide {
+        display: none;
+    }
+}

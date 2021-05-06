@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 3rem;
 }
 
 .youtube-logo {
@@ -19,8 +19,8 @@
 .search-input {
     width: 45%;
     font-size: 1.4rem;
-    padding: .4rem;
-    border: 1px solid var(--main-border);
+    padding: .6rem .4rem;
+    border: 1px solid #ccc;
     border-radius: 2px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     padding: 0 1.5rem;
-    border: 1px solid var(--main-border);
+    border: 1px solid #ccc;
     background-color: #f8f8f8;
     border-radius: 2px;
     border-top-left-radius: 0;
@@ -42,36 +42,79 @@
     background-color: #f0f0f0;
 }
 
-.search-mobile {
-    display: none;
+.title-icons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    gap: 2rem;
 }
 
 .menu-icons {
     display: grid;
     grid-template-columns: repeat(4, auto);
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
+}
+
+.menu-icons__Search {
+    display: none;
 }
 
 .menu-channel-icon {
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-icons__More {
+    display: none;
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
     .header {
-        border-bottom: 1px solid var(--main-border);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 3;
+        /* border-bottom: 1px solid var(--main-border); */
+        padding: 1rem 1.25rem;
+        box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+    }
+    .desktop-menu {
+        display: none;
+    }
+    .youtube-logo {
+        height: 18px;
     }
     .search-input,
     .search-btn {
         display: none;
     }
     .menu-icons {
-        grid-template-columns: repeat(5, auto);
+        gap: 1.25rem;
+        margin-right: 0;
     }
-    .search-mobile {
-        display: true;
+    .menu-icons a>img {
+        width: 22px;
+        height: 22px;
+    }
+    .menu-icons a>img.menu-channel-icon {
+        width: 26px;
+        height: 26px;
+    }
+    .menu-icons__Search {
+        display: block;
+    }
+    .menu-icons__More {
+        display: block;
+    }
+    .menu-icons__Notifications {
+        display: none;
+    }
+    .menu-icons__Upload {
+        display: none;
     }
 }

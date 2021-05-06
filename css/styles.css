@@ -6,9 +6,11 @@
 @import "./variables.css";
 
 /* Components */
+@import "./scrollbar.css";
 @import "./video.css";
 @import "./categories.css";
 @import "./header.css";
+@import "./sidebar.css";
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -17,4 +19,12 @@
 html {
     font-size: 10px;
     font-family: Roboto, Arial, sans-serif;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+
 }
